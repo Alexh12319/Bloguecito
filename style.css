@@ -1,0 +1,125 @@
+body {
+    background-image: url(Imagenes/Fondos/tumblr_okoay6Hstt1w50259o1_1280.webp); /* fondo general */
+    color: black;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* BLOQUE CENTRAL */
+.bloque {
+    background-color: #befd8e; /* color distinto del fondo */
+    width: 800px;              /* ancho fijo tipo retro */
+    margin: 20px auto;         /* centrado horizontal + margen arriba/abajo */
+    border: 3px double black;  /* bordes tipo retro */
+    padding: 20px;             /* espacio interno para respirar */
+}
+
+/* HEADER */
+header {
+    background-color: #73e4e2; /* puedes mantenerlo o quitarlo para uniformidad */
+    text-align: center;
+    padding: 10px 0;
+    border: none;
+}
+
+/* MENU */
+nav {
+    background-color: #00c8ff;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px 0;
+    border: none;
+}
+
+/* CONTENIDO */
+main {
+    padding: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    background-color: #00ffa6;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 12px;
+    border: none;
+}
+
+/* LINKS */
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #ff0000;
+}
+
+/* MENÚ COMO BOTONES */
+nav a {
+    display: inline-block;           /* Para poder poner padding y fondo */
+    background-color: #22ff00;       /* Color de fondo del botón */
+    color: black;                     /* Texto negro */
+    text-decoration: none;            /* Quita subrayado */
+    padding: 5px 15px;                /* Espacio dentro del botón */
+    margin: 2px;                      /* Separación entre botones */
+    border: 2px solid black;          /* Borde negro grueso estilo retro */
+    font-weight: bold;                /* Letras en negrita */
+    font-family: "Courier New", monospace; /* Fuente retro */
+    cursor: pointer;                  /* Mano al pasar por encima */
+}
+
+/* Efecto al pasar el ratón */
+nav a:hover {
+    background-color: #1d3cba;        /* Color más fuerte al pasar */
+    color: white;                      /* Texto cambia a blanco */
+}
+
+.disclaimer {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    background-color: #00008b; /* azul oscuro tipo pantalla antigua */
+    color: #ffffff;             /* texto blanco */
+    border: 4px solid #888888;  /* borde gris tipo monitor viejo */
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+    box-shadow: inset 2px 2px 0 #555555, inset -2px -2px 0 #aaa; /* efecto profundidad tipo ventana */
+    width: fit-content;         /* ajusta al contenido */
+    max-width: 90%;             /* no muy grande en pantalla */
+}
+
+.disclaimer h2 {
+    font-size: 16px;
+    color: #ff0000;             /* título rojo para “alerta retro” */
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0 #000000; /* efecto de relieve */
+}
+
+.pageButtons{
+    cursor: pointer;
+}
+
+.contenedor-botones {
+    display: grid;
+    /* Crea 9 columnas del mismo tamaño */
+    grid-template-columns: repeat(9, auto); 
+    /* Espacio entre los botones */
+    gap: 10px; 
+    /* Evita que el marquee corte las imágenes a la mitad */
+    padding: 10px;
+    width: max-content;
+}
+
+.pageButtons {
+    width: 88px;  /* Tamaño estándar de botones retro */
+    height: 31px; /* Tamaño estándar de botones retro */
+    image-rendering: pixelated; /* Para que no se vean borrosos */
+    border: 1px solid #444; /* Un toque extra retro */
+}

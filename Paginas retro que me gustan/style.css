@@ -1,0 +1,26 @@
+.bloque {
+    background-color: #f0e4c2; /* fondo pergamino claro retro */
+}
+
+header {
+    background-color: #d1b77a; /* marrón suave */
+}
+
+nav {
+    background-color: #e5d9a8; /* amarillo apagado */
+}
+
+nav a {
+    background-color: #c9b77a; /* botones marrón/amarillo vintage */
+    color: #1a1a1a;
+}
+
+nav a:hover{
+    background-color: #f4d35e; /* amarillo vivo al pasar */
+
+}
+
+.pageButtons{
+    cursor: pointer;
+}
+

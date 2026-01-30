@@ -1,0 +1,147 @@
+.bloque{
+   background-color: #ffd58b;
+}
+
+header {
+    background-color: #ac9565; /* puedes mantenerlo o quitarlo para uniformidad */
+
+}
+
+/* MENU */
+nav {
+    background-color: #fcf987;
+}
+
+nav a {
+    background-color: #ffe100; 
+}
+
+nav a:hover{
+    background-color: #ff9100;  
+}
+
+
+.muestrario {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 150px;
+
+    margin-top: 20px;
+    padding: 15px;
+
+    background-image: url(../Imagenes/Fondos/wood_texture_pixel.png);
+    
+    box-shadow: inset 0 0 0 2px #000000;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+    border: 1px solid black;
+}
+
+.item:hover{
+
+    transform: scale(1.03);
+}
+
+.ventana{
+
+    font-size: 12px;
+    padding: 6px 10px;
+
+    background-color: #eaeaea;
+
+    border: 2px solid black;
+
+    box-shadow:
+        inset 1px 1px 0 #ffffff,
+        inset -1px -1px 0 #777777;
+
+    font-family: monospace;
+
+}
+
+.titulo-ventana {
+    background-color: #000080;
+    color: white;
+    font-size: 11px;
+    padding: 2px 6px;
+    margin: -6px -10px 4px -10px;
+    text-align: right;
+}
+.contexto{
+    font-family: monospace;
+   font-size:16px;
+
+}
+
+.controles {
+    align-items: right;
+    display: flex;
+    gap: 2px;
+}
+
+.btn-ventana {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+
+    background-color: #c0c0c0;
+    border: 1px solid black;
+
+    box-shadow:
+        inset 1px 1px 0 #ffffff,
+        inset -1px -1px 0 #777777;
+
+    cursor: pointer;
+}
+
+
+.btn-ventana.min::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 2px;
+    background: black;
+    margin: 5px auto 0;
+}
+
+.btn-ventana.max::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid black;
+    margin: 2px auto;
+}
+
+.btn-ventana.close::before {
+    content: "×";
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    display: block;
+}
+
+
+.portada {
+
+    margin-bottom: 10px; /* separación entre libro y ventana */
+    box-shadow:
+        4px 4px 0 #000,
+        8px 8px 0 rgba(0,0,0,0.3);
+}

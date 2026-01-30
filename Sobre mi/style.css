@@ -1,0 +1,210 @@
+.bloque {
+    background-color: #efffb6; /* amarillo muy suave para contraste */
+}
+
+header {
+    background-color: #f1a782; /* naranja suave, cálido y divertido */
+}
+
+nav {
+    background-color: rgb(235, 255, 133); /* verde amarillento */
+}
+
+nav a {
+    background-color: #000000; /* morado vibrante estilo VRChat */
+    color: white;
+}
+
+nav a:hover{
+    background-color: #cfff4a; /* morado más brillante al pasar */
+
+}
+
+
+
+
+.muestrario {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 200px;
+
+    margin-top: 20px;
+    padding: 15px;
+
+    background-color: #d1dab0;
+    
+    box-shadow: inset 0 0 0 2px #000000;
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+    border: 1px solid black;
+}
+
+.item:hover{
+
+    transform: scale(1.03);
+}
+
+.ventana{
+
+    font-size: 12px;
+    padding: 6px 10px;
+
+    background-color: #eaeaea;
+
+    border: 2px solid black;
+
+    box-shadow:
+        inset 1px 1px 0 #ffffff,
+        inset -1px -1px 0 #777777;
+
+    font-family: monospace;
+
+}
+
+.titulo-ventana {
+    background-color: #000080;
+    color: white;
+    font-size: 11px;
+    padding: 2px 6px;
+    margin: -6px -10px 4px -10px;
+    text-align: right;
+}
+.contexto{
+    font-family: monospace;
+   font-size:16px;
+
+}
+
+.controles {
+    align-items: right;
+    display: flex;
+    gap: 2px;
+}
+
+.btn-ventana {
+    width: 12px;
+    height: 12px;
+    padding: 0;
+
+    background-color: #c0c0c0;
+    border: 1px solid black;
+
+    box-shadow:
+        inset 1px 1px 0 #ffffff,
+        inset -1px -1px 0 #777777;
+
+    cursor: pointer;
+}
+
+
+.btn-ventana.min::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 2px;
+    background: black;
+    margin: 5px auto 0;
+}
+
+.btn-ventana.max::before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid black;
+    margin: 2px auto;
+}
+
+.btn-ventana.close::before {
+    content: "×";
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    display: block;
+}
+
+.buton_link_imagenes {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace; /* Tipografía tipo máquina de escribir */
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    /* El truco del estilo retro: bordes sólidos y negros */
+    border: 3px solid #000000;
+    border-radius: 0px; /* Bordes cuadrados para ese look antiguo */
+    
+
+    box-shadow: 5px 5px 0px 0px #000000;
+    
+    transition: all 0.1s; 
+    cursor: pointer;
+}
+
+.buton_link_imagenes:hover {
+    background-color: #ffff00; 
+    transform: translate(-2px, -2px);
+    box-shadow: 7px 7px 0px 0px #000000;
+}
+
+.buton_link_imagenes:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px 0px #000000;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    image-rendering: pixelated;
+    border: 1px solid black;
+}
+
+.item:hover{
+
+    transform: scale(1.03);
+}
+
+.image-item {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid #444;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+}
+
+.image-item img {
+    display: block;
+    border-radius: 6px;
+}
+
+@keyframes spin{
+  from{ transform:rotate(0deg); }
+  to{ transform:rotate(-360deg); }
+}
+.general-about .profile-pic img{
+  border-radius: 50%;
+  animation: spin 7s infinite linear;
+}
