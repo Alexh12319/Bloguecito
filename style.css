@@ -8,11 +8,11 @@ body {
 
 /* BLOQUE CENTRAL */
 .bloque {
-    background-color: #befd8e; /* color distinto del fondo */
-    width: 800px;              /* ancho fijo tipo retro */
-    margin: 20px auto;         /* centrado horizontal + margen arriba/abajo */
-    border: 3px double black;  /* bordes tipo retro */
-    padding: 20px;             /* espacio interno para respirar */
+    background-color: #befd8e; 
+    width: 800px;             
+    margin: 20px auto;         
+    border: 3px double black;  
+    padding: 20px;            
 }
 
 /* HEADER */

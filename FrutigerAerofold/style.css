@@ -1,0 +1,103 @@
+Body{
+    background-image: url(../Imagenes/Fondos/FrutigerAeroFONDO.png) ; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: "Nintendo", system-ui, sans-serif;
+}
+@font-face {
+    font-family: "Nintendo";
+    src: url("../Font/NintendBoldRM8E.ttf") format("opentype");
+}
+
+.NormFont{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.contenedor-lateral {
+    display: flex;           /* pone todo en fila */
+    align-items: flex-start; /* alinea arriba */
+    justify-content: center; /* centra el conjunto en la página */
+    gap: 10px;               /* separación mínima entre ventana y GIF */
+    margin-top: 20px;
+}
+
+.Ventana_Extra {
+    position: relative;
+    display: inline-block;  
+}
+
+.Ventana_Extra img {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;             
+    pointer-events: none;   
+}
+
+.title-containter{
+     background: linear-gradient(180deg, #ffffff 0%, #e4f2ff 40%, #c0dcff 100%);
+     border-radius: 10px;
+}
+
+.Ventana_Extra iframe {
+    position: absolute;
+    top: 8%;      
+    left: 5%;     
+    width: 80%;    
+    height: 80%; 
+    margin-top: 5%;
+    margin-left:5%;
+    border: none;
+    border-radius: 10px;
+    z-index: 1;   
+}
+.gif-lateral {
+    height: auto;
+    max-height: 400px; 
+}
+
+.bloque {
+    background: linear-gradient(180deg, #b9e5ff 0%, #71c6ff 40%, #e9f6ff 100%);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 0 0 10px;
+    align-self: center;
+    margin: 0 auto;  
+    border-radius: 15px;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(180deg, #2c79c7 0%, #0f5ca8 50%, #0b3f7f 100%);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 30px;
+}
+
+/* MENU */
+nav {
+    border-radius: 30px;
+    background: linear-gradient(180deg, #ebffe8 0%, #b3ffb6 45%, #8aff5c 100%); 
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+    background: linear-gradient(180deg, #ffffff 0%, #e4f2ff 40%, #c0dcff 100%);
+    color: #003c78; 
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.18);
+    text-decoration: none;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.1s ease;
+}
+
+nav a:hover {
+
+    background: linear-gradient(180deg, #a6ffaa 0%, #5cff5f 45%, #3dff3a 100%);
+    color: #2b2b2b;
+    box-shadow: 0 0 6px rgba(255, 200, 80, 0.9);
+    transform: translateY(-1px);
+}
