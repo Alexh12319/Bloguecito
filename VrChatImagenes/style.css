@@ -1,30 +1,32 @@
 .bloque {
-    background-color: #efffb6; /* amarillo muy suave para contraste */
+    background-color: #1b1a17; /* gris cálido oscuro */
+    color: #e6e2dc; /* blanco roto */
 }
 
 header {
-    background-color: #f1a782; /* naranja suave, cálido y divertido */
+    background-color: #c97a4a; /* naranja ámbar suave */
+    color: #1b1a17;
 }
 
 nav {
-    background-color: rgb(235, 255, 133); /* verde amarillento */
+    background-color: #23211e; /* marrón grisáceo */
 }
 
 nav a {
-    background-color: #000000; /* morado vibrante estilo VRChat */
-    color: white;
+    background-color: #2d2a25; /* botón cozy */
+    color: #e6c28b; /* ámbar claro */
+    border: 1px solid #6b5535;
 }
 
 nav a:hover{
-    background-color: #9b30ff; /* morado más brillante al pasar */
-
+    background-color: #3a352d;
+    color: #ffe0b3;
 }
 
 
 
 
 .muestrario {
-    
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 200px;
@@ -32,67 +34,75 @@ nav a:hover{
     margin-top: 20px;
     padding: 15px;
 
-    background-color: #d1dab0;
-    
-    box-shadow: inset 0 0 0 2px #000000;
-
+    background-color: #07352b;
+    border-style: solid;
+    border-color: rgb(53, 53, 53);
+    border-bottom-width: 20px;
+    border-left-width:10px;
+    border-right-width:10px;
+    border-top-width:10px;
 }
 
 .item {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: #ffffff;
-    border: 2px solid black;
+
+    background-color: #24211d;
+    border: 2px solid #6b5535;
     padding: 10px;
+
+    color: #e6e2dc;
 }
 
 .item img {
     max-width: 100%;
     height: auto;
     display: block;
+
     image-rendering: pixelated;
-    border: 1px solid black;
+    border: 1px solid #a27c52; /* marco cálido */
 }
 
 .item:hover{
-
-    transform: scale(1.03);
+    transform: scale(1.02);
+    box-shadow: 0 0 6px rgba(255, 200, 120, 0.25);
 }
 
 .ventana{
-
     font-size: 12px;
     padding: 6px 10px;
 
-    background-color: #eaeaea;
+    background-color: #26231f;
+    color: #e6e2dc;
 
-    border: 2px solid black;
+    border: 2px solid #6b5535;
 
     box-shadow:
-        inset 1px 1px 0 #ffffff,
-        inset -1px -1px 0 #777777;
+        inset 1px 1px 0 #3a352d,
+        inset -1px -1px 0 #141310;
 
     font-family: monospace;
-
 }
 
 .titulo-ventana {
-    background-color: #000080;
-    color: white;
+    background-color: #29374f; /* barra sobria */
+    color: #f0d8a8;
+
     font-size: 11px;
     padding: 2px 6px;
     margin: -6px -10px 4px -10px;
+
     text-align: right;
 }
+
 .contexto{
     font-family: monospace;
-   font-size:16px;
-
+    font-size:16px;
+    color: #e6c28b;
 }
 
 .controles {
-    align-items: right;
     display: flex;
     gap: 2px;
 }
@@ -102,12 +112,12 @@ nav a:hover{
     height: 12px;
     padding: 0;
 
-    background-color: #c0c0c0;
-    border: 1px solid black;
+    background-color: #a4a4a9;
+    border: 1px solid #6b5535;
 
     box-shadow:
-        inset 1px 1px 0 #ffffff,
-        inset -1px -1px 0 #777777;
+        inset 1px 1px 0 #4a4338,
+        inset -1px -1px 0 #1a1815;
 
     cursor: pointer;
 }
@@ -118,7 +128,7 @@ nav a:hover{
     display: block;
     width: 6px;
     height: 2px;
-    background: black;
+    background: #000000;
     margin: 5px auto 0;
 }
 
@@ -127,7 +137,7 @@ nav a:hover{
     display: block;
     width: 6px;
     height: 6px;
-    border: 1px solid black;
+    border: 1px solid #000000;
     margin: 2px auto;
 }
 
@@ -137,5 +147,6 @@ nav a:hover{
     line-height: 12px;
     text-align: center;
     display: block;
+    color: #000000; /* rojo apagado */
 }
 

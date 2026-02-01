@@ -1,0 +1,41 @@
+
+body{
+    background-image: url(../Imagenes/Fondos/CasettesBackground.jpg) ; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+
+nav a:visited {
+    background-color: #262626;
+    color: #a50000;
+    border: 1px solid #8b1e1e;
+    text-decoration: none;
+}
+
+.bloque {
+    
+    background-color: #141414; /* negro asfalto */
+    color: #e8e3d9; /* blanco envejecido */
+}
+
+
+header {
+    background-color: #8b1e1e; /* rojo punk gastado */
+ 
+}
+
+nav {
+    background-color: #1b1b1b; 
+  
+}
+
+
+
+nav a:hover{
+    background-color: #8b1e1e;
+    color: #ffffff;
+}
